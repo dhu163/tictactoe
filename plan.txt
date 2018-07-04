@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun 17 14:22:32 2018
+
+@author: Daniel Hu
+"""
+
+9 inputs for each board, one for colour, and one bias
+hidden layer of 9 neurons, and 9 outputs for each square
+
+init: generate n random players; n=5
+winners = []
+->
+
+tournament: generate n random opponents to play against
+and also human to play?
+ -> 1 on cross, 1 on noughts
+ -> score and reorder based on score
+ -> append winner of each round
+ 
+evolution: take top 2 winners direction, and subsequently
+
+probability of selecting parent from place i is 1/(2^i)
+then random selection of weight from each parent
+
+generate n in new generation.
+
+
+__
+to do: play computer vs human
+
+merge game into ttt
++ score best of 10
+
+__
+probably should have used 18 neurons to avoid the symmetry issue. The theta values are all positive and get very large
+perhaps should limit theta values to 50 or something.
+
+ 
